@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom slideshow effect - html template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navigation">
+
+        <div>
+            <ul class="menu">
+                <li class="brand">Arti</li>
+                <li>About us</li>
+                <li>Contact</li>
+                <li>Blog</li>
+
+            </ul>
+        </div>
+        <div class="btn--purple">Sign up</div>
+
+    </nav>
+    <main>
+        <div class="hero">
+
+            <div class="hero__content">
+                <h1 class="hero__heading">Create</h1>
+                <h2 class="hero__heading">unique</h2>
+                <h2 class="hero__heading">art.</h2>
+
+            </div>
+
+            <div class="heroinfo">
+
+                <div class="heroinfo__panel">
+
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z" />
+                        </svg>
+                    </div>
+                    <span>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+                    </span>
+
+                </div>
+
+                <div class="heroinfo__panel">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0L24 0 24 24 0 24z" />
+                            <path
+                                d="M16 16c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zM6 12c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm10 6c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zM6 14c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm8.5-12C17.538 2 20 4.462 20 7.5S17.538 13 14.5 13 9 10.538 9 7.5 11.462 2 14.5 2zm0 2C12.567 4 11 5.567 11 7.5s1.567 3.5 3.5 3.5S18 9.433 18 7.5 16.433 4 14.5 4z" />
+                        </svg>
+                    </div>
+                    <span>
+
+                        Voluptatibus odio voluptate id eos deserunt aperiam.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+            <div class="hero-bg"></div>
+            <div class="hero-bg2"></div>
+
+        </div>
+        <div class="slide-container">
+            <figure class="slide__one">
+                <div class="slide__two">
+                </div>
+            </figure>
+            <input type="range" min="0" max="100" value="20" id="slider" oninput="moveSlider()">
+        </div>
+
+    </main>
+
+
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
+</html>
