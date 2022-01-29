@@ -2,7 +2,10 @@ function moveSlider() {
     let slideTwo = document.querySelector(".slide__two");
     let slider = document.getElementById("slider");
 
-    slideTwo.style.width = slider.value + "%";
+    let clipPathValue = `inset(0 ${100 - slider.value}% 0 0)`;
+    slideTwo.style.clipPath = clipPathValue;
+
+
 }
 
 (function () {
